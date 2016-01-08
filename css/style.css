@@ -1,6 +1,6 @@
 /*
     Name: Expedition
-    Description: Responsive Coming Soon 
+    Description: Responsive Coming Soon
     Version: 1.0
     Author: MountainTheme
 
@@ -138,7 +138,7 @@ html, body {
           margin-bottom: -3.25em;
           margin-left: -12.5em;
           padding-top: 0.5em;
-        
+
 }
 
 .title-section i {
@@ -161,7 +161,7 @@ html, body {
 	width: 100%;
 	position: fixed;
 	z-index: 999;
-} 
+}
 
 .loader-icon {
     background: none repeat scroll 0 0 #fff;
@@ -203,9 +203,9 @@ html, body {
 			-webkit-transform:rotate(359deg);
 			transform:rotate(359deg)
 		}
-	} 
+	}
 
-	@keyframes fa-spin 
+	@keyframes fa-spin
 	{
 		0%
 		{
@@ -252,10 +252,10 @@ header h1 {
 	font-size: 1.80em;
 	color: #3d4a6e;
 	display: inline-block;
-	padding: 14px 10px 10px 14px;      
+	padding: 14px 10px 10px 14px;
 	margin-top: 30px;
-	letter-spacing: 0.135em;      
-	font-weight: 600;      
+	letter-spacing: 0.135em;
+	font-weight: 600;
 	text-transform: uppercase;
 	font-family: 'Aldrich', sans-serif;
 	border: 7px double #010101;
@@ -286,7 +286,7 @@ header .mouse {
 	margin-left: -20px;
 	position: absolute;
     text-align: center;
-    
+
 	bottom: 0;
     left: 50%;
     	animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
@@ -326,14 +326,14 @@ header .mouse-wrapper .mouse a:hover {
 
 @-webkit-keyframes wobbleArrow
  {
- from   { 
+ from   {
 
- bottom: 40px; 
+ bottom: 40px;
 
  }
- to { 
+ to {
 
- bottom: 50px; 
+ bottom: 50px;
 
  }
  }
@@ -369,7 +369,7 @@ header .mouse-wrapper .mouse a:hover {
   color: #000000;
   text-align: center;
   padding: 20px 0 140px;
-  background: rgb(255, 255, 255);    
+  background: rgb(255, 255, 255);
 }
 
 
@@ -379,7 +379,7 @@ header .mouse-wrapper .mouse a:hover {
 }
 
 .countdown-section .title-section span {
-   display: block; 
+   display: block;
    margin-top: -20px;
 }
 
@@ -388,7 +388,7 @@ header .mouse-wrapper .mouse a:hover {
   font-size: 1.7em;
   color: #3d4a6e;
   margin: 0px;
-  text-align: center;        
+  text-align: center;
   margin-bottom: 50px;
   letter-spacing: 1px;
   font-family: 'Open Sans', sans-serif;
@@ -424,7 +424,7 @@ header .mouse-wrapper .mouse a:hover {
   margin: 0 auto;
   font-family: 'Aldrich', sans-serif;
   line-height: 65px;
-  display: block; 
+  display: block;
   color: #3d4a6e;
   text-align: center;
   font-weight: 300;
@@ -461,18 +461,18 @@ header .mouse-wrapper .mouse a:hover {
 }
 
 .services .icon i.fa {
-	height: 140px;  
-	width: 140px;  
-	line-height: 140px; 
-	max-width: 100%;  
+	height: 140px;
+	width: 140px;
+	line-height: 140px;
+	max-width: 100%;
 	background: #3d4a6e;
 	position: relative;
 	margin: 0 auto;
 	display:block;
 	font-size: 35px;
-	border-radius: 50%;  
-	-o-border-radius: 50%;  
-	-moz-border-radius: 50%; 
+	border-radius: 50%;
+	-o-border-radius: 50%;
+	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-bottom: none;
 	color: rgba(255, 255, 255, 1);
@@ -507,7 +507,7 @@ header .mouse-wrapper .mouse a:hover {
 .services h2 {
 	font-weight:600;
 	font-size: 14px;
-	color: #3d4a6e;      
+	color: #3d4a6e;
 	text-transform: uppercase;
 	text-align:center;
 	word-wrap: break-word;
@@ -515,7 +515,10 @@ header .mouse-wrapper .mouse a:hover {
 	font-family: 'Open Sans', sans-serif;
 }
 
-
+.services hr {
+	border-top: 1px solid #000;
+	width: 200px;
+}
 .services p {
 	text-align: center;
 	font-size: 13px;
@@ -535,15 +538,15 @@ header .mouse-wrapper .mouse a:hover {
 }
 
 .services .line span {
-  content: " ";  
-  border: solid 2px #3d4a6e;  
-  display: block;  
-  width: 3px;  
+  content: " ";
+  border: solid 2px #3d4a6e;
+  display: block;
+  width: 3px;
   padding: 3px;
   margin: 20px auto;
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg); 
+  transform: rotate(45deg);
 }
 
 .services .line:before {
@@ -603,7 +606,7 @@ header .mouse-wrapper .mouse a:hover {
 .about h2 {
   margin-bottom: 20px;
   text-align: center;
-  font-size: 14px;  
+  font-size: 14px;
   font-weight: bold;
   color: #3d4a6e;
   text-transform: uppercase;
@@ -617,15 +620,15 @@ header .mouse-wrapper .mouse a:hover {
   margin:0 auto;
 }
 .about .line span {
-  content: " ";  
-  border: solid 2px #3d4a6e;  
-  display: block;  
-  width: 3px;  
+  content: " ";
+  border: solid 2px #3d4a6e;
+  display: block;
+  width: 3px;
   padding: 3px;
   margin: 20px auto;
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg); 
+  transform: rotate(45deg);
 }
 
 .about .line:before {
@@ -665,9 +668,9 @@ header .mouse-wrapper .mouse a:hover {
 	  line-height: 25px;
 }
 
-.about  i.fa {     
+.about  i.fa {
    text-align: center;
-  font-size: 15px;     
+  font-size: 15px;
   border-bottom: none;
   color: #3d4a6e;
   margin: 30px 30px 15px auto;
@@ -714,7 +717,7 @@ header .mouse-wrapper .mouse a:hover {
 	font-weight: 300;
 	color: #000;
 	text-align:center;
-	letter-spacing: 1px;  
+	letter-spacing: 1px;
 	text-transform: uppercase;
 	padding: 0 0 57px 0;
 	font-family: "Open Sans", sans-serif;
@@ -767,10 +770,10 @@ header .mouse-wrapper .mouse a:hover {
     transition: all 0.3s!important;
 }
 
-.contact input[type='submit'] {	
-	background-color: #3d4a6e; 
+.contact input[type='submit'] {
+	background-color: #3d4a6e;
 	border: 2px solid #3d4a6e;
-	color: #FFFFFF; 
+	color: #FFFFFF;
 	width: 45%;
 	display:block;
 	margin:0 auto;
@@ -787,9 +790,9 @@ header .mouse-wrapper .mouse a:hover {
     transition: all 0.3s ease-in-out !important;
 }
 
-.contact input[type="submit"]:hover { 
-	background: rgba(22, 182, 234, 0); 
-	color: #3d4a6e; 
+.contact input[type="submit"]:hover {
+	background: rgba(22, 182, 234, 0);
+	color: #3d4a6e;
 }
 
 .contact .error .email {
@@ -936,7 +939,7 @@ header .mouse-wrapper .mouse a:hover {
 	padding: 120px 0 120px;
 	z-index: 10;
 	position: relative;
-	background: rgb(255, 255, 255) url("../images/bg.png");         
+	background: rgb(255, 255, 255) url("../images/bg.png");
 }
 
 .subscribe h2 {
@@ -944,7 +947,7 @@ header .mouse-wrapper .mouse a:hover {
 	font-weight: 300;
 	color: #FFFFFF;
 	text-align:center;
-	letter-spacing: 1px;  
+	letter-spacing: 1px;
 	text-transform: uppercase;
 	padding: 0 0 27px 0;
 	font-family: "Open Sans", sans-serif;
@@ -955,11 +958,11 @@ header .mouse-wrapper .mouse a:hover {
 	text-align:center;
 }
 
-.subscribe input[type=text] { 
-	background-color: rgba(255, 255, 255, 0.1); 
+.subscribe input[type=text] {
+	background-color: rgba(255, 255, 255, 0.1);
 	border: solid 2px #3d4a6e;
 	height: 45px;
-	width: 28%; 
+	width: 28%;
 	color: #3d4a6e;
 	word-spacing: 1px;
 	padding-left: 20px;
@@ -968,26 +971,26 @@ header .mouse-wrapper .mouse a:hover {
 	outline: none;
 }
 
-.subscribe button {	
-	background-color: #3d4a6e; 
+.subscribe button {
+	background-color: #3d4a6e;
 	border: 2px solid #3d4a6e;
-	color: #fff; 
+	color: #fff;
 	width: 6%;
 	word-spacing: 1px;
 	outline: none;
 	font-size: 15px;
 	font-weight: 700;
 	height: 45px;
-	transition: all 0.5s ease; 
-	-moz-transition: all 0.5s ease; 
-	-webkit-transition: all 0.5s ease; 
-	-o-transition: all 0.5s ease; 
+	transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 }
 
-.subscribe button:hover { 
-	background: transparent; 
+.subscribe button:hover {
+	background: transparent;
 	border: solid 2px #3d4a6e;
-	color: #3d4a6e; 
+	color: #3d4a6e;
 }
 
 .subscribe label {
@@ -1030,10 +1033,10 @@ footer .social-icons li {
 
 footer .social-icons li i.fa {
 	color: #3d4a6e;
-	transition: all 0.5s ease; 
-	-moz-transition: all 0.5s ease; 
-	-webkit-transition: all 0.5s ease; 
-	-o-transition: all 0.5s ease; 
+	transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 }
 
 footer .social-icons li:hover i.fa {
@@ -1057,8 +1060,8 @@ footer .social-icons {
 
 footer .copyright {
 	float: left;
-	line-height: 25px;      
-	font-weight: 300;      
+	line-height: 25px;
+	font-weight: 300;
 	font-size: 14px;
 }
 
@@ -1069,19 +1072,19 @@ footer a {
 }
 
 footer .social-icons a {
-	-webkit-border-radius: 4px;   
-	-moz-border-radius: 4px;    
-	-o-border-radius: 4px;    
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
 	border-radius: 4px;
 	display: block;
-	 width: 30px;    
-	 height: 30px; 
+	 width: 30px;
+	 height: 30px;
 	text-align: center;
 	line-height: 30px;
-	transition: all 0.5s ease; 
-	-moz-transition: all 0.5s ease; 
-	-webkit-transition: all 0.5s ease; 
-	-o-transition: all 0.5s ease; 
+	transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 	color: #3d4a6e;
 	font-size: 15px;
 
@@ -1118,7 +1121,7 @@ a.instagram:hover { background-color: #4d4f54; }
 	.about .col-md-4 {
 		margin-bottom: 40px;
 	}
-	
+
 	.subscribe button {
 		width: 10%;
 	}
@@ -1189,18 +1192,18 @@ a.instagram:hover { background-color: #4d4f54; }
 	.contact .error .name {
 		left: 42.5%;
 	}
-	
+
 	.subscribe button {
 		width: 80%;
 		margin-top: 10px;
-	
+
 	}
 
 	.subscribe #mc-email {
 		width: 80%;
 	}
 
-	
+
 
 }
 
