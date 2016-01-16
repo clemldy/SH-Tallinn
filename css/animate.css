@@ -6,7 +6,13 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2014 Daniel Eden
 */
-
+#my_typeform {
+ display: inline-block;
+ width: 800px;
+ height: 600px;
+ margin: 60px;
+ }
+ 
 .animated {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;

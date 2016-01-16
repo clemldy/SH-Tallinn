@@ -141,6 +141,30 @@ html, body {
 
 }
 
+.btn-sh {
+  color          : #FFF !important;
+	border-color   : #5abd64 !important;
+	background-color: #5abd64 !important;
+  border-width   : 2px !important;
+  border-radius  : 3px;
+  letter-spacing : 0px;
+  font-size      : 25px !important;
+  font-weight    : bold !important;
+
+}
+
+.btn-sh:hover {
+  color          : #5abd64!important;
+	background-color: transparent !important;
+  border-width   : 2px !important;
+  border-color   : #5abd64 !important;
+  border-radius  : 3px;
+  letter-spacing : 0px;
+  font-size      : 25px !important;
+  font-weight    : bold !important;
+
+}
+
 .title-section i {
       font-style: normal;
 }
@@ -460,7 +484,7 @@ header .mouse-wrapper .mouse a:hover {
 	position: relative;
 }
 
-.services .icon i.fa {
+.countdown-section .icon i.fa {
 	height: 140px;
 	width: 140px;
 	line-height: 140px;
@@ -507,6 +531,15 @@ header .mouse-wrapper .mouse a:hover {
 .services h2 {
 	font-weight:600;
 	font-size: 14px;
+	color: #3d4a6e;
+	text-transform: uppercase;
+	text-align:center;
+	word-wrap: break-word;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+.services h1 {
+	font-weight:600;
 	color: #3d4a6e;
 	text-transform: uppercase;
 	text-align:center;
