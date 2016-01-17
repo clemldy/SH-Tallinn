@@ -1,6 +1,6 @@
 /*
     Name: Expedition
-    Description: Responsive Coming Soon 
+    Description: Responsive Coming Soon
     Version: 1.0
     Author: MountainTheme
 
@@ -11,7 +11,7 @@
      3. Backstretch Image Background
          3.1 Backstretch Slideshow Background
      4. Countdown
-     5. Contact form 
+     5. Contact form
      6. Ajax mailchimp
      7. Player Youtube Controls
      8. Google map
@@ -22,17 +22,17 @@
 /* :::::::::: 1. Loading ::::::::::: */
 /* ================================= */
 
- 
+
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     $(".player").hide();
     $(".player-controls").hide();
-  } 
+  }
 
 $(window).load(function() {
 
     $(".loader-icon").delay(500).fadeOut();
     $("#page-loader").delay(700).fadeOut("slow");
- 
+
     setTimeout(function() {
     $(".logo").delay(1000).css({display: 'none'}).fadeIn(1000);
     $("h1").delay(1000).css({display: 'none'}).fadeIn(1000);
@@ -66,8 +66,8 @@ $(window).load(function() {
 /* ::::::::: 3. Backstretch :::::::: */
 /* ================================= */
 
-/* Active Single Image Background  */  
-  
+/* Active Single Image Background  */
+
  $("body").backstretch("images/background2.jpg");
 
 // ==== SLIDESHOW BACKGROUND ====
@@ -76,16 +76,16 @@ $(window).load(function() {
 // Add / remove images by changing the number of lines below
 // Variable fade = transition speed for fade animation, in milliseconds
 // Variable duration = time each slide is shown for, in milliseconds
-          
 
- /* ↓ Remove comments if you want to use the slideshow  ↓  */ 
+
+ /* ↓ Remove comments if you want to use the slideshow  ↓  */
 
 $("body").backstretch([
-        "images/background1.jpg", 
-        "images/background2.jpg", 
-        "images/background3.jpg", 
+        "images/background1.jpg",
+        "images/background2.jpg",
+        "images/background3.jpg",
         "images/background4.jpg"
-    ],{duration: 3000, fade: 750}); 
+    ],{duration: 3000, fade: 750});
 
 
 /* ================================= */
@@ -96,7 +96,7 @@ $("body").backstretch([
     // To change date, simply edit: var endDate = "Dec 01, 2015 20:39:00";
 
    $(function() {
-   var endDate = "Nov 28, 2015 23:59:59";
+   var endDate = "Apr 01, 2016 11:59:59";
   $('.countdown').countdown({
           date: endDate,
           render: function(data) {
@@ -110,10 +110,10 @@ $("body").backstretch([
 /* ================================= */
 
 $(function(){
-      $('#submit').click(function() {  
-           // validate and process form here 
+      $('#submit').click(function() {
+           // validate and process form here
            $("#ajax-contact-form").validate({
-             
+
                   rules:{
 
                         name:{
@@ -151,29 +151,29 @@ $(function(){
                 submitHandler: function(form) {
 
                      // Create variables from the form
-                     var name = $('input#name').val(); 
-                     var email = $('input#email').val();  
+                     var name = $('input#name').val();
+                     var email = $('input#email').val();
                      var msg = $('textarea#msg').val();
 
                      // Create variables that will be sent in a URL string to contact.php
                      var dataString = '&name='+ name + '&email=' + email + '&msg=' + msg;
-        
+
                         $.ajax({
                             type: "POST",
                             url: "php/contact.php",
                             data: dataString,
                             success: function(data) {
-                                  if(data === 'OK') { $("#ajax-contact-form").find('input[type=text], input[type=email], textarea').val(""); } 
+                                  if(data === 'OK') { $("#ajax-contact-form").find('input[type=text], input[type=email], textarea').val(""); }
                                   if(data == 'OK') {
                                     result = '<div class="notification_ok"><i class="fa fa-check"></i> Your email was sent. Thanks!</div>';
-                                   
+
                                   } else {
                                   result = data;
                                  }
                           $('#note').html(result);
-           
+
                           }
-                         
+
                       });
                      return false;
                }
@@ -216,7 +216,7 @@ $(function(){
 /* ================================= */
 /* :: 7. Player Youtube Controls ::  */
 /* ================================= */
-    
+
     $(function(){
       $(".player").mb_YTPlayer();
     });
@@ -246,22 +246,22 @@ $(function(){
   //google map custom marker icon - .png fallback for IE11
   var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
   var marker_url = ( is_internetExplorer11 ) ? 'images/icon-location.png' : 'images/icon-location.png';
-    
+
   //define the basic color of your map, plus a value for saturation and brightness
   var main_color = '#2d313f',
     saturation_value= -20,
     brightness_value= 5;
 
   //we define here the style of the map
-  var style= [ 
+  var style= [
     {
       //set saturation for the labels on the map
       elementType: "labels",
       stylers: [
         {saturation: saturation_value},
       ]
-    },  
-      { //poi stands for point of interest - don't show these lables on the map 
+    },
+      { //poi stands for point of interest - don't show these lables on the map
       featureType: "poi",
       elementType: "labels",
       stylers: [
@@ -275,22 +275,22 @@ $(function(){
           stylers: [
               {visibility: "off"},
           ]
-      }, 
-    {   
+      },
+    {
       //don't show local road lables on the map
-      featureType: "road.local", 
-      elementType: "labels.icon", 
-      stylers: [
-        {visibility: "off"}, 
-      ] 
-    },
-    { 
-      //don't show arterial road lables on the map
-      featureType: "road.arterial", 
-      elementType: "labels.icon", 
+      featureType: "road.local",
+      elementType: "labels.icon",
       stylers: [
         {visibility: "off"},
-      ] 
+      ]
+    },
+    {
+      //don't show arterial road lables on the map
+      featureType: "road.arterial",
+      elementType: "labels.icon",
+      stylers: [
+        {visibility: "off"},
+      ]
     },
     {
       //don't show road lables on the map
@@ -299,25 +299,25 @@ $(function(){
       stylers: [
         {visibility: "off"},
       ]
-    }, 
+    },
     //style different elements on the map
-    { 
-      featureType: "transit", 
-      elementType: "geometry.fill", 
+    {
+      featureType: "transit",
+      elementType: "geometry.fill",
       stylers: [
         { hue: main_color },
-        { visibility: "on" }, 
-        { lightness: brightness_value }, 
+        { visibility: "on" },
+        { lightness: brightness_value },
         { saturation: saturation_value },
       ]
-    }, 
+    },
     {
       featureType: "poi",
       elementType: "geometry.fill",
       stylers: [
         { hue: main_color },
-        { visibility: "on" }, 
-        { lightness: brightness_value }, 
+        { visibility: "on" },
+        { lightness: brightness_value },
         { saturation: saturation_value },
       ]
     },
@@ -326,8 +326,8 @@ $(function(){
       elementType: "geometry.fill",
       stylers: [
         { hue: main_color },
-        { visibility: "on" }, 
-        { lightness: brightness_value }, 
+        { visibility: "on" },
+        { lightness: brightness_value },
         { saturation: saturation_value },
       ]
     },
@@ -336,8 +336,8 @@ $(function(){
       elementType: "geometry.fill",
       stylers: [
         { hue: main_color },
-        { visibility: "on" }, 
-        { lightness: brightness_value }, 
+        { visibility: "on" },
+        { lightness: brightness_value },
         { saturation: saturation_value },
       ]
     },
@@ -346,8 +346,8 @@ $(function(){
       elementType: "geometry.fill",
       stylers: [
         { hue: main_color },
-        { visibility: "on" }, 
-        { lightness: brightness_value }, 
+        { visibility: "on" },
+        { lightness: brightness_value },
         { saturation: saturation_value },
       ]
     },
@@ -356,8 +356,8 @@ $(function(){
       elementType: "geometry.fill",
       stylers: [
         { hue: main_color },
-        { visibility: "on" }, 
-        { lightness: brightness_value }, 
+        { visibility: "on" },
+        { lightness: brightness_value },
         { saturation: saturation_value },
       ]
     },
@@ -366,8 +366,8 @@ $(function(){
       elementType: "geometry.fill",
       stylers: [
         { hue: main_color },
-        { visibility: "on" }, 
-        { lightness: brightness_value }, 
+        { visibility: "on" },
+        { lightness: brightness_value },
         { saturation: saturation_value },
       ]
     },
@@ -376,8 +376,8 @@ $(function(){
       elementType: "geometry.fill",
       stylers: [
         { hue: main_color },
-        { visibility: "on" }, 
-        { lightness: brightness_value }, 
+        { visibility: "on" },
+        { lightness: brightness_value },
         { saturation: saturation_value },
       ]
     },
@@ -385,19 +385,19 @@ $(function(){
       featureType: "landscape",
       stylers: [
         { hue: main_color },
-        { visibility: "on" }, 
-        { lightness: brightness_value }, 
+        { visibility: "on" },
+        { lightness: brightness_value },
         { saturation: saturation_value },
       ]
-      
+
     },
     {
       featureType: "road",
       elementType: "geometry.fill",
       stylers: [
         { hue: main_color },
-        { visibility: "on" }, 
-        { lightness: brightness_value }, 
+        { visibility: "on" },
+        { lightness: brightness_value },
         { saturation: saturation_value },
       ]
     },
@@ -406,23 +406,23 @@ $(function(){
       elementType: "geometry.fill",
       stylers: [
         { hue: main_color },
-        { visibility: "on" }, 
-        { lightness: brightness_value }, 
+        { visibility: "on" },
+        { lightness: brightness_value },
         { saturation: saturation_value },
       ]
-    }, 
+    },
     {
       featureType: "water",
       elementType: "geometry",
       stylers: [
         { hue: main_color },
-        { visibility: "on" }, 
-        { lightness: brightness_value }, 
+        { visibility: "on" },
+        { lightness: brightness_value },
         { saturation: saturation_value },
       ]
     }
   ];
-    
+
   //set google map options
   var map_options = {
         center: new google.maps.LatLng(latitude, longitude),
@@ -437,11 +437,11 @@ $(function(){
     }
     //inizialize the map
   var map = new google.maps.Map(document.getElementById('google-container'), map_options);
-  //add a custom marker to the map        
+  //add a custom marker to the map
 
 
 
- 
+
 
    var marker = new google.maps.Marker({
       position: new google.maps.LatLng(latitude, longitude),
@@ -450,18 +450,18 @@ $(function(){
       visible: true,
       icon: marker_url,
   });
-  
+
 
 
   google.maps.event.addDomListener(window, "resize", function() {
      var center = map.getCenter();
      google.maps.event.trigger(map, "resize");
-     map.setCenter(center); 
-    }); 
+     map.setCenter(center);
+    });
 
   //add custom buttons for the zoom-in/zoom-out on the map
   function CustomZoomControl(controlDiv, map) {
-    //grap the zoom elements from the DOM and insert them in the map 
+    //grap the zoom elements from the DOM and insert them in the map
       var controlUIzoomIn= document.getElementById('zoom-in'),
         controlUIzoomOut= document.getElementById('zoom-out');
       controlDiv.appendChild(controlUIzoomIn);
@@ -481,6 +481,3 @@ $(function(){
 
     //insert the zoom div on the top left of the map
     map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
-
-
-

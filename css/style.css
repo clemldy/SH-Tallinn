@@ -40,9 +40,9 @@ html, body {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(255, 255, 255, 0.7) url("../images/bg.png");
-    background-repeat: repeat;
-    z-index: 100;
+	background: rgba(255, 255, 255, 0.6) url("../images/bg.png");
+  background-repeat: repeat;
+  z-index: 100;
 }
 
 .mbYTP_wrapper:after {
@@ -52,9 +52,9 @@ html, body {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(255, 255, 255, 0.9) url("../images/bg.png");
-  	background-repeat: repeat;
-    z-index: 100;
+	background: rgba(255, 255, 255, 0.6) url("../images/bg.png");
+  background-repeat: repeat;
+  z-index: 100;
 }
 
 
