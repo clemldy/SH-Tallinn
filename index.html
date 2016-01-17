@@ -272,7 +272,7 @@
               <div class="typeform-widget" data-url="https://shtallinn.typeform.com/to/ncXzSK" data-text="SH-Tallinn" style="width:90%;height:250px;"></div>
               <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">
                 Powered by
-                <a href="http://www.typeform.com/?utm_campaign=ncXzSK&amp;utm_source=typeform.com-1635325-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded&amp;utm_term=EN" style="color: #999" target="_blank">
+                <a href="http://www.typeform.com/?utm_campaign=ncXzSK&amp;utm_source=typeform.com-1635325-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded&amp;utm_term=EN" style="color: #999">
                   Typeform
                 </a>
               </div>
@@ -364,6 +364,14 @@
               }, 900, 'swing');
           });
       });
+$(window).load(function(){ /*code here*/  
+      $(window).scrollTop(0);
+})
+$('.typeform-widget').load(function(){
+      alert('loaded!');
+      $(window).scrollTop(0);
+
+});
     </script>
   </body>
 </html>
