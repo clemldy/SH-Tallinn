@@ -40,8 +40,8 @@ html, body {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(255, 255, 255, 0.6) url("../images/bg.png");
-  background-repeat: repeat;
+	background: rgba(255, 255, 255, 0.6);
+  background-repeat: no-repeat;
   z-index: 100;
 }
 
@@ -52,8 +52,8 @@ html, body {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(255, 255, 255, 0.6) url("../images/bg.png");
-  background-repeat: repeat;
+	background: rgba(255, 255, 255, 0.6);
+  background-repeat: no-repeat;
   z-index: 100;
 }
 
@@ -61,8 +61,8 @@ html, body {
 .player-controls {
 	position: absolute;
 	top: 190px;
-	right: 25%;
-}
+/*	right: 25%;
+*/}
 
 .player-controls a {
 	background: none;
@@ -268,8 +268,8 @@ header {
 	padding-top: 145px;
 	height: 850px;
 	background-image: url("../images/border-bottom.png");
-    background-position: bottom center, top left, center center;
-    background-repeat: repeat-x, repeat, no-repeat;
+  background-position: bottom center, top left, center center;
+  background-repeat: repeat-x, repeat, no-repeat;
 }
 
 header h1 {
@@ -298,8 +298,8 @@ header p {
 header .mouse-wrapper {
 	margin:0 auto;
 	display:block;
-	width:28px;
-	position:absolute;
+/*	width:28px;
+*/	position:absolute;
 	z-index:10;
 	left:0;
 	right:0;
@@ -309,10 +309,10 @@ header .mouse-wrapper {
 header .mouse {
 	margin-left: -20px;
 	position: absolute;
-    text-align: center;
+  text-align: center;
 
 	bottom: 0;
-    left: 50%;
+  left: 50%;
     	animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
   -webkit-animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
   -moz-animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
